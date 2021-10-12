@@ -16,7 +16,7 @@ char * parteEntera10aDestino (long long * numero, short * baseDestino, short * m
     *auxiliar = *numero;
     numeroAux = numero;
     *contador = 0;
-
+    //Recorro el numero y lo voy transformando a la base destino
     while (*numeroAux > 0) {
 
         if (*mostrar == 1){
@@ -24,7 +24,7 @@ char * parteEntera10aDestino (long long * numero, short * baseDestino, short * m
         }
 
         *resultado = (*numeroAux % *baseDestino);
-
+        //Si la base es mayor a 10 y el resultado mayor o igual a 10 lo convierto en la letra,de lo contrario lo convierto en su numero correspondiente
         if (*resultado >= 10 && *baseDestino > 10){
             convertirNumeroALetra (resultado);
         }
@@ -53,9 +53,11 @@ char * parteEntera10aDestino (long long * numero, short * baseDestino, short * m
         *contador += 1;
         printf ("= (%I64d) %hd \n" , *numeroAux, *baseDestino);
     }
-
+    // Le asigno al final del resultado el '\0'
     *resultado = '\0';
+    //Vuelvo al puntero a la primer posicion de resultado
     resultado -= *contador ;
+    //Doy vuelta el resultado ya que es necesario por el algoritmo aplicado
     strrev (resultado);
 
     if (*mostrar == 1) {

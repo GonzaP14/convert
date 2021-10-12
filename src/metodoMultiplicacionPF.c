@@ -18,9 +18,10 @@ char * parteFraccionaria10ADestino (double * numero, short * baseDestino, short 
 
     * numeroAux = * numero;
     * contador = 0;
-
+    //Recorro hasta obtener la cantidad de digitos de precision que me pasaron por parametro
     while ((*contador) != (*precision)) {
         * resultadoActual = (* numeroAux) * (* baseDestino);
+        //Saco el piso para obtener el digito que va en la parte fraccionaria
         * digitoActual = floor (*resultadoActual);
 
         if ((* mostrar == 1)) {
@@ -44,7 +45,7 @@ char * parteFraccionaria10ADestino (double * numero, short * baseDestino, short 
         resultado ++;
         *contador = *contador + 1;
     }
-
+    //Le agrego el '\0' al final del arreglo
     *resultado = '\0';
     resultado = resultado - *contador;
 

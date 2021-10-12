@@ -4,6 +4,7 @@
 #include "Conversor.h"
 
 void validarNumero (char * numero, short * check) {
+    //Me fijo si el numero es una letra o un numero,osea que no tenga signos en la primer posicion
     if ((*numero >= '0' && *numero <= '9') || (*numero >= 'A' && *numero <= 'Z') || (*numero >= 'a' && *numero <= 'z')) {
         *check = 1;
     }
@@ -17,7 +18,7 @@ void validarBase (char * base, short * check) {
 
     *contador = 0;
     *check = 1;
-
+    //Recorro la base hasta encontrar un '\0' y me fijo si son solo numeros,en caso contrario modifico lo apuntado por check y rompo el while
     while (base [*contador] != '\0'){
         if (base [*contador] >= '0' && base [*contador] <= '9'){
             *contador += 1;
@@ -90,7 +91,7 @@ void procesarEntrada (char * numero , short * baseOrigen , short * baseDestino ,
     char * resultado;
 
     mostrarEntrada (numero, baseOrigen, baseDestino, verbose, help);
-
+    //Si lo ingresado es solo -h muestro la ayuda de lo contrario convierto el numero
     if (numero == NULL) {
         if (*help == 1) mostrarHelp ();
         printf ("No se ingreso un numero. \n\n");

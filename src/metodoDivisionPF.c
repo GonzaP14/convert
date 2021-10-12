@@ -22,8 +22,9 @@ double * parteFraccionariaOrigenA10 (char * numero, short * baseOrigen , short *
 
     auxiliar = numero;
     numero = numero + *contador;
-
+    //Recorre hasta llegar al limite,osea hasta llegar a la primera posicion del numero
     while (*contador >= *limite){
+        //Convierto un char en un short int
         convertirLetraANumero (digito, numero);
 
         if (*mostrar == 1 && (*contador != *limite)){

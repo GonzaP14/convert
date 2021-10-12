@@ -23,7 +23,6 @@ long long * parteEnteraOrigenA10 (char * numero, short * baseOrigen, short * mos
     * cantidadCaracteres = 0;
     * resultado = 0;
     * cantidadDigitos = 0;
-
     *cantidadCaracteres = strlen(numeroAux) - 1;
 
     while (*cantidadCaracteres >= 0) {
@@ -33,6 +32,7 @@ long long * parteEnteraOrigenA10 (char * numero, short * baseOrigen, short * mos
         }
 
         convertirLetraANumero (digitoActual, numeroAux);
+        //Saco la de base origen elevado al caracter en el que me encuentro para luego ser multiplicada por el digito actual
         * pot = (pow (* baseOrigen, * cantidadCaracteres));
         * resultado = * resultado + ((* digitoActual) * (* pot));
 

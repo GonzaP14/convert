@@ -119,3 +119,67 @@
 	<stdio.h>
 	<stdlib.h>
 
+1633996955 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\src\conversor.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"metodoMultiplicacionPE.h"
+	"metodoMultiplicacionPF.h"
+	"metodoDivisionPE.h"
+	"metodoDivisionPF.h"
+	"Validacion.h"
+
+1633996955 c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\src\metodomultiplicacionpe.h
+
+1633996955 c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\src\metodomultiplicacionpf.h
+
+1633996955 c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\src\metododivisionpe.h
+
+1633996955 c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\src\metododivisionpf.h
+
+1633996955 c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\src\validacion.h
+
+1633997830 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\src\metododivisionpe.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"metodosAuxiliares.h"
+
+1633996955 c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\src\metodosauxiliares.h
+
+1633998256 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\src\metododivisionpf.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"metodosAuxiliares.h"
+
+1633998663 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\src\metodomultiplicacionpe.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	"metodosAuxiliares.h"
+
+1633998536 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\src\metodomultiplicacionpf.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"metodosAuxiliares.h"
+
+1633996955 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\src\metodosauxiliares.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1633996955 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\src\validacion.c
+	<stdio.h>
+	<stdlib.h>
+
+1633997234 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\src\convert.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Conversor.h"
+
+1633996955 c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\src\conversor.h
+
