@@ -147,7 +147,7 @@ int main (int argc, char ** argv) {
     printf ("\n\n");
 
     if (argc >= 2 && argc <= 9) {
-
+        //Voy obteniendo todos los argumentos de argv y se lo voy asignando a las variables correspondientes para cada caso
         while (*contador < argc) {
 
             if (strcmp (argv [*contador], "-n" ) == 0) {

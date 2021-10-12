@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
-1633991685 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\convert.c
+1634001611 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\convert.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"Conversor.h"
 
-1633991769 c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\conversor.h
+1634001358 c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\conversor.h
 
 1634001358 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\conversor.c
 	<stdio.h>
@@ -59,7 +59,7 @@
 	<stdlib.h>
 	<string.h>
 
-1634001358 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\validacion.c
+1634002752 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\validacion.c
 	<stdio.h>
 	<stdlib.h>
 
