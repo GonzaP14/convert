@@ -1,0 +1,121 @@
+# depslib dependency file v1.0
+1633991685 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\convert.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Conversor.h"
+
+1633991769 c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\conversor.h
+
+1633991685 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\conversor.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"metodoMultiplicacionPE.h"
+	"metodoMultiplicacionPF.h"
+	"metodoDivisionPE.h"
+	"metodoDivisionPF.h"
+	"Validacion.h"
+
+1633991883 c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\metodomultiplicacionpe.h
+
+1633991908 c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\metodomultiplicacionpf.h
+
+1633991843 c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\metododivisionpe.h
+
+1633991883 c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\metododivisionpf.h
+
+1633991964 c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\validacion.h
+
+1633991685 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\metododivisionpe.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"metodosAuxiliares.h"
+
+1633991964 c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\metodosauxiliares.h
+
+1633991685 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\metododivisionpf.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"metodosAuxiliares.h"
+
+1633991685 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\metodomultiplicacionpe.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	"metodosAuxiliares.h"
+
+1633991685 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\metodomultiplicacionpf.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"metodosAuxiliares.h"
+
+1633991685 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\metodosauxiliares.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1633991685 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\validacion.c
+	<stdio.h>
+	<stdlib.h>
+
+1633996486 source:c:\users\gonzalo perez\documents\odc\convert\src\conversor.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"metodoMultiplicacionPE.h"
+	"metodoMultiplicacionPF.h"
+	"metodoDivisionPE.h"
+	"metodoDivisionPF.h"
+	"Validacion.h"
+
+1633991884 c:\users\gonzalo perez\documents\odc\convert\src\metodomultiplicacionpe.h
+
+1633991910 c:\users\gonzalo perez\documents\odc\convert\src\metodomultiplicacionpf.h
+
+1633991844 c:\users\gonzalo perez\documents\odc\convert\src\metododivisionpe.h
+
+1633991884 c:\users\gonzalo perez\documents\odc\convert\src\metododivisionpf.h
+
+1633991966 c:\users\gonzalo perez\documents\odc\convert\src\validacion.h
+
+1633991686 source:c:\users\gonzalo perez\documents\odc\convert\src\metododivisionpe.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"metodosAuxiliares.h"
+
+1633991966 c:\users\gonzalo perez\documents\odc\convert\src\metodosauxiliares.h
+
+1633991686 source:c:\users\gonzalo perez\documents\odc\convert\src\metododivisionpf.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"metodosAuxiliares.h"
+
+1633991686 source:c:\users\gonzalo perez\documents\odc\convert\src\metodomultiplicacionpe.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	"metodosAuxiliares.h"
+
+1633991686 source:c:\users\gonzalo perez\documents\odc\convert\src\metodomultiplicacionpf.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"metodosAuxiliares.h"
+
+1633991686 source:c:\users\gonzalo perez\documents\odc\convert\src\metodosauxiliares.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1633991686 source:c:\users\gonzalo perez\documents\odc\convert\src\validacion.c
+	<stdio.h>
+	<stdlib.h>
+
