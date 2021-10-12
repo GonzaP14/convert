@@ -32,9 +32,9 @@ char * parteEntera (char * numero) {
         numero ++;
     }
 
-    *numPE = '\0'; // Asigno una refencia para el final del puntero.
-    numPE -= *contador; // Vuelvo a el primer caracter apuntado por numPE.
-    numero -= *contador; // Vuelvo a el primer caracter apuntado por numero.
+    *numPE = '\0'; // Asigno una referencia para el final del puntero.
+    numPE -= *contador; // Vuelvo al primer caracter apuntado por numPE.
+    numero -= *contador; // Vuelvo al primer caracter apuntado por numero.
 
     free (contador);
 
@@ -53,14 +53,20 @@ char * parteFraccionaria (char * numero) {
     *contador = 0;
     *contadorNumPF = 0;
 
+    // Recorro el numero hasta encontrar un punto o un '\0', salteando los caracteres de numero.
+
     while (*numero != '.' && *numero != '\0') {
         numero ++;
         *contador = *contador + 1;
     }
 
+    // Si encuentro un punto, quiere decir que existe parte fraccionaria en el numero.
+
     if (*numero == '.') {
         numero ++;
         *contador = *contador + 1;
+
+        // Recorro el numero hasta encontrar un '\0' para extraer la parte fraccionaria del numero.
 
         while (*numero != '\0') {
         *numPF = *numero;
@@ -71,9 +77,9 @@ char * parteFraccionaria (char * numero) {
         }
     }
 
-    *numPF = '\0';
-    numero -= *contador;
-    numPF -= *contadorNumPF;
+    *numPF = '\0'; // Asigno una referencia para el final del puntero.
+    numero -= *contador; // Vuelvo al primer caracter apuntado por numero.
+    numPF -= *contadorNumPF ;// Vuelvo al primer caracter apuntado por numPF.
 
     free (contador);
     free (contadorNumPF);
@@ -84,6 +90,9 @@ char * parteFraccionaria (char * numero) {
 char * convertirParteEntera (char * numPE, short * baseOrigen, short * baseDestino, short * mostrar) {
     char * resultado;
     long long* auxiliar;
+
+    // Convierto la parte entera de numero de su base origen a la base 10.
+    // Convierto la parte entera de numero de la base 10 a la base destino.
 
     if (*mostrar == 1) {
         printf("Metodo multiplicacion: Parte Entera \n");
@@ -108,8 +117,13 @@ char * convertirParteFraccionaria (char * numPF, short * baseOrigen, short * bas
     char * resultado;
     double * auxiliar;
 
-    precision = (short*) malloc(sizeof(short));
+    // Establezco una precision para la conversion de la parte fraccionaria.
+
+    precision = (short*) malloc (sizeof(short));
     *precision = 10;
+
+    // Convierto la parte fraccionaria de numero de su base origen a la base 10.
+    // Convierto la parte fraccionaria de numero de la base 10 a la base destino.
 
     if (*mostrar == 1) {
         printf("Metodo division: Parte Fraccionaria \n");
@@ -133,6 +147,7 @@ char * convertirParteFraccionaria (char * numPF, short * baseOrigen, short * bas
 char * convertir (char * numero, short * baseOrigen, short * baseDestino, short * mostrar, short * procesoCompleto) {
     short * checkPE;
     short * checkPF;
+    short * checkLongitudes;
     char * numPE;
     char * numPF;
     char * numPEConvertido;
@@ -143,10 +158,16 @@ char * convertir (char * numero, short * baseOrigen, short * baseDestino, short 
     numPF = parteFraccionaria (numero);
     numPEConvertido = NULL;
     numPFConvertido = NULL;
-    checkPE = verificarNumero (numPE,baseOrigen);
-    checkPF = verificarNumero (numPF,baseOrigen);
+    checkPE = verificarNumero (numPE, baseOrigen);
+    checkPF = verificarNumero (numPF, baseOrigen);
+    checkLongitudes = (short *) malloc (sizeof (short));
 
-    if (*checkPE == 1 && *checkPF == 1 && strlen(numPE) <= 10 && strlen(numPF) <= 5) {
+
+    *checkLongitudes = (strlen (numPE) <= 10 && strlen (numPF) <= 5) ? 1 : 0;
+
+    // Si el numero chequea las condiciones de su base origen y las longitudes de sus partes estan dentro de los limites.
+
+    if (*checkPE == 1 && *checkPF == 1 && *checkLongitudes == 1) {
         numPEConvertido = convertirParteEntera (numPE, baseOrigen, baseDestino, mostrar);
         if (strlen (numPF) != 0) {
             numPFConvertido = convertirParteFraccionaria (numPF, baseOrigen, baseDestino, mostrar);
@@ -160,13 +181,26 @@ char * convertir (char * numero, short * baseOrigen, short * baseDestino, short 
             free (numPFConvertido);
         }
 
-    } else {
-        printf ("El numero no verifica las condiciones de su base origen: %i. \n\n", *baseOrigen);
+    }
+
+    // De lo contrario, muestro un mensaje adecuado y establezco que el proceso no se pudo realizar.
+
+    else {
+
+        if (*checkPE == 0 || *checkPF == 0){
+            printf ("El numero no verifica las condiciones de su base origen: %i. \n\n", *baseOrigen);
+        }
+
+        if (*checkLongitudes == 0) {
+            printf ("El numero no verifica las longitudes establecidas para alguna de sus partes. \n\n");
+        }
+
         *procesoCompleto = 0;
     }
 
     free (checkPE);
     free (checkPF);
+    free (checkLongitudes);
     free (numPE);
     free (numPF);
 

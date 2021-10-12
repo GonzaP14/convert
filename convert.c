@@ -4,7 +4,6 @@
 #include "Conversor.h"
 
 void validarNumero (char * numero, short * check) {
-    //Me fijo si el numero es una letra o un numero,osea que no tenga signos en la primer posicion
     if ((*numero >= '0' && *numero <= '9') || (*numero >= 'A' && *numero <= 'Z') || (*numero >= 'a' && *numero <= 'z')) {
         *check = 1;
     }
@@ -13,12 +12,14 @@ void validarNumero (char * numero, short * check) {
 
 void validarBase (char * base, short * check) {
     short * contador;
+    short * baseAuxiliar;
 
     contador = (short *) malloc (sizeof (short));
+    baseAuxiliar = (short *) malloc (sizeof (short));
 
     *contador = 0;
     *check = 1;
-    //Recorro la base hasta encontrar un '\0' y me fijo si son solo numeros,en caso contrario modifico lo apuntado por check y rompo el while
+
     while (base [*contador] != '\0'){
         if (base [*contador] >= '0' && base [*contador] <= '9'){
             *contador += 1;
@@ -29,7 +30,13 @@ void validarBase (char * base, short * check) {
         }
     }
 
+    if (*check == 1) {
+        *baseAuxiliar = atoi (base);
+        *check = ((*baseAuxiliar) >= 2 && (*baseAuxiliar) <= 16) ? 1 : 0;
+    }
+
     free (contador);
+    free (baseAuxiliar);
 }
 
 void mostrarEntrada (char * numero , short * baseOrigen , short * baseDestino , short * verbose , short * help) {
@@ -91,7 +98,7 @@ void procesarEntrada (char * numero , short * baseOrigen , short * baseDestino ,
     char * resultado;
 
     mostrarEntrada (numero, baseOrigen, baseDestino, verbose, help);
-    //Si lo ingresado es solo -h muestro la ayuda de lo contrario convierto el numero
+
     if (numero == NULL) {
         if (*help == 1) mostrarHelp ();
         printf ("No se ingreso un numero. \n\n");
@@ -221,7 +228,7 @@ int main (int argc, char ** argv) {
         }
 
         if (*procesoCompleto == 0) {
-            printf ("-> Alguna de las entradas no verifica las condiciones necesarias. \n");
+            printf ("-> Alguna de las entradas no verifica las condiciones necesarias. \n\n");
         } else {
              procesarEntrada (numero, baseOrigen, baseDestino, verbose, help, procesoCompleto);
         }

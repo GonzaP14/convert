@@ -38,14 +38,17 @@ short * verificarNumero (char * numero, short * baseOrigen) {
     short * resultado;
     char * numeroAux;
     resultado = (short *) malloc (sizeof (short));
+
     * resultado = 1;
     numeroAux = numero;
 
-    if ((* baseOrigen) > 16 ) {
+    if ((*baseOrigen) > 16 ) {
         * resultado = 0;
-    } else if ((* baseOrigen) <= 10) {
+    }
+    else if ((*baseOrigen) <= 10 && (*baseOrigen) >= 2) {
         verificarNumeroBase2a10 (numeroAux, baseOrigen, resultado);
-    } else {
+    }
+    else if ((*baseOrigen) >= 11) {
         verificarNumeroBase11a16 (numeroAux, baseOrigen, resultado);
     }
 
