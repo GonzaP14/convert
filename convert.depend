@@ -7,7 +7,7 @@
 
 1633991769 c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\conversor.h
 
-1633991685 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\conversor.c
+1634001358 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\conversor.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -17,49 +17,49 @@
 	"metodoDivisionPF.h"
 	"Validacion.h"
 
-1633991883 c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\metodomultiplicacionpe.h
+1634001358 c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\metodomultiplicacionpe.h
 
-1633991908 c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\metodomultiplicacionpf.h
+1634001358 c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\metodomultiplicacionpf.h
 
-1633991843 c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\metododivisionpe.h
+1634001358 c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\metododivisionpe.h
 
-1633991883 c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\metododivisionpf.h
+1634001358 c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\metododivisionpf.h
 
-1633991964 c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\validacion.h
+1634001358 c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\validacion.h
 
-1633991685 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\metododivisionpe.c
+1634001358 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\metododivisionpe.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"metodosAuxiliares.h"
 
-1633991964 c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\metodosauxiliares.h
+1634001358 c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\metodosauxiliares.h
 
-1633991685 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\metododivisionpf.c
+1634001358 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\metododivisionpf.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"metodosAuxiliares.h"
 
-1633991685 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\metodomultiplicacionpe.c
+1634001358 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\metodomultiplicacionpe.c
 	<stdio.h>
 	<stdlib.h>
 	<math.h>
 	<string.h>
 	"metodosAuxiliares.h"
 
-1633991685 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\metodomultiplicacionpf.c
+1634001358 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\metodomultiplicacionpf.c
 	<stdio.h>
 	<stdlib.h>
 	<math.h>
 	"metodosAuxiliares.h"
 
-1633991685 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\metodosauxiliares.c
+1634001358 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\metodosauxiliares.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 
-1633991685 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\validacion.c
+1634001358 source:c:\users\nmess\onedrive\escritorio\universidad\2do cuatrimestre 2do año\odc\convert\validacion.c
 	<stdio.h>
 	<stdlib.h>
 

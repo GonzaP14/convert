@@ -29,7 +29,7 @@ void validarBase (char * base, short * check) {
             break;
         }
     }
-
+    //Validamos la base para ver si esta entre 2 y 16
     if (*check == 1) {
         *baseAuxiliar = atoi (base);
         *check = ((*baseAuxiliar) >= 2 && (*baseAuxiliar) <= 16) ? 1 : 0;
